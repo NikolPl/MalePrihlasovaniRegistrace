@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Úkol03 - pexeso</title>
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styly.css"
+          th:href="${'css/styly.css'}"/>
+    <link rel="icon" href="../static/images/favicon.png"
+          th:href="${'images/favicon.png'}"/>
+</head>
+<body>
+
+    <header>
+        <h1>
+            Přihlašovací formulář
+        </h1>
+        <ul>
+            <li><a href="/">Domů</a></li>
+            <li><a href="">Odkaz 1</a></li>
+            <li><a href="">Odkaz 2</a></li>
+            <li><a href="">Odkaz 3</a></li>
+            <li><a href="">Odkaz 4</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <table>
+            <tr>
+                <th>Jméno</th>
+                <th>Příjmení</th>
+                <th>Telefon</th>
+                <th>Email</th>
+                <th>Heslo</th>
+                <th>Heslo 2</th>
+            </tr>
+            <tr th:each="uzivatel : ${seznamVsech}">
+                <td th:text="${uzivatel.krestniJmeno}">Jméno</td>
+                <td th:text="${uzivatel.prijmeni}">Příjmení</td>
+                <td th:text="${uzivatel.telefon}">Telefon</td>
+                <td th:text="${uzivatel.email}">Email</td>
+                <td th:text="${uzivatel.heslo}">Heslo</td>
+                <td th:text="${uzivatel.heslo2}">Heslo 2</td>
+            </tr>
+        </table>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>

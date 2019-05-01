@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Úkol03 - pexeso</title>
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styly.css"
+          th:href="${'css/styly.css'}"/>
+    <link rel="icon" href="../static/images/favicon.png"
+          th:href="${'images/favicon.png'}"/>
+</head>
+<body>
+
+    <header>
+        <h1>
+            Přihlašovací formulář
+        </h1>
+        <ul>
+            <li><a href="/">Domů</a></li>
+            <li><a href="">Odkaz 1</a></li>
+            <li><a href="">Odkaz 2</a></li>
+            <li><a href="">Odkaz 3</a></li>
+            <li><a href="">Odkaz 4</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <h1>Přihlaste se</h1>
+
+
+
+        <form method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="jmeno">Přihlašovací jméno:</label>
+                    </td>
+                    <td>
+                        <input id="jmeno"   name="email"
+                               value="" th:value="${uzivatel}">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hes">Heslo:</label>
+                    </td>
+                    <td>
+                        <input id="hes" name="heslo" type="password"
+                               value="">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <input type="submit" value="Přihlásit se">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="zapomenute-heslo">Zapomenuté heslo</a>
+                    </td>
+                    <td>
+                        <a href="registrace">Nová registrace</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>

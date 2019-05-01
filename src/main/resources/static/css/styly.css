@@ -1,0 +1,164 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(54, 42, 42);
+    font-size:18px;
+    font-family: 'Quicksand', 'Helvetica', sans-serif;
+    color: rgb(216, 204, 170);
+    line-height: 1.5;
+    margin:auto; /*musí tu zůstat, aby se obrázek v hlavičce roztáhl a nebyly okraje*/
+
+}
+
+main {
+    max-width: 50em; /* šířka zbylého těla - kromě hlavičky*/
+    margin: 0 auto; /*okraje od hlavičky - vnější*/
+    background-color: rgb(54, 42, 42);
+}
+
+footer {
+    display: block;
+    background-color: rgb(54, 42, 42);
+}
+table {
+    width:100%;
+    border: 1px solid #999966;
+    border-radius: 5px;
+    border-spacing: 0;
+}
+
+table tbody tr:hover {
+    background-color: rgb(66, 52, 52);
+}
+
+table th {
+    background-color: rgb(66, 52, 52);
+
+}
+table td{
+    text-align: center;
+}
+.pravy {
+    border-top-right-radius: 5px;
+}
+.levy {
+    border-top-left-radius: 5px;
+}
+
+header {
+    background-color:rgb(54, 42, 42);
+    background-image: url("../images/4.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vw 0vw;
+    text-align: center;
+
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Charmonman', 'Quicksand','Helvetica', cursive;
+    font-size: 250%;
+}
+
+header ul {
+    margin:0;
+    padding:0;
+    background-color: rgb(54, 42, 42);
+    box-shadow: 5px 0px 5px #999966;
+
+}
+
+header li {
+    display: inline-block; /* dáme to do inline-block - abychom mohli pracovat s výškou prvku a zároveň, aby 
+    to bylo v řádce*/
+
+}
+
+header a {
+    display:block;
+    color: rgb(216, 204, 170);
+    text-decoration: none;
+    padding: 0.5em; /* nastavení aby kliklací plocha byla větší*/
+    font-weight: normal;
+}
+
+header a:hover, a:focus {
+    color:rgb(93, 190, 190);
+    background-color: rgb(66, 52, 52);
+}
+
+.box-1 {
+    /*border: 1px solid black;*/
+    padding:10px;
+    margin: 10px;
+    border-radius: 5px;
+    max-width:100%;
+    /* box-shadow: 5px 1px 10px #584149; */
+
+}
+
+.box-1 img {
+    width: 100%;
+    border-radius: 5px;
+    padding:0;
+}
+
+
+
+/*jo na blbosti to mě užije*/
+.uprava img{
+    border-radius: 100%;
+    max-width: 100%;
+}
+/* konec blbostí*/
+.box-3 {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width:28%;
+    float:left;
+
+}
+.box-3 img {
+    max-width: 100%;
+}
+
+.box-4 {
+    padding:5px;
+    margin:10px;
+    border-radius: 5px;
+    width:20%;
+    float:left;
+    /*border: 1px solid black;*/
+}
+.box-4 img {
+    width: 100%;
+    height:125px;
+    padding: 0;
+    border-radius: 5px;
+
+}
+
+h2 {
+    font-size: 130%;
+}
+
+a {
+    color: rgb(216, 204, 170);
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+    color:rgb(93, 190, 190);
+}
+
+.clearfix {
+    content:"";
+    display:block;
+    clear:both;
+}
